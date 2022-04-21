@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <section class="cardHolder">
+    <section class="frontContent">
+      <section class="ratingContainer">
+        <section class="stars">
+          <img class="starOne" src="images/icon-star.svg" alt="oneStar">
+          <img class="starTwo hiddenStar " src="images/icon-star.svg" alt="twoStar">
+          <img class="starThree hiddenStar " src="images/icon-star.svg" alt="threeStar">
+          <img class="starFour hiddenStar " src="images/icon-star.svg" alt="fourStar">
+          <img class="starFive hiddenStar " src="images/icon-star.svg" alt="fiveStar">
+        </section>
+
+        <h1> How did we do?</h1>  
+
+        <p> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+
+        <section class="rating"> 
+          <span class="ratingOne">1</span>
+          <span class="ratingTwo">2</span>
+          <span class="ratingThree">3</span>
+          <span class="ratingFour">4</span>
+          <span class="ratingFive">5</span>
+        </section>
+        <button class="submit">SUBMIT</button>
+      </section>
+    </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+    <section class="rearContent">
+      <section class="tyContainer hidden">
+
+        <img src="images/illustration-thank-you.svg" alt="ThankYouIcon">
+
+        <span class="one hidden">You selected 1 out of 5</span>
+        <span class="two hidden">You selected 2 out of 5</span>
+        <span class="three hidden">You selected 3 out of 5</span>
+        <span class="four hidden">You selected 4 out of 5</span>
+        <span class="five hidden">You selected 5 out of 5</span>
+
+        <h1>Thank you!</h1>
+
+       <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+      </section>
+    </section>
+</section>
+</body>
+<script src="main.js"></script>
+</html>
